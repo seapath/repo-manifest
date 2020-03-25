@@ -12,6 +12,7 @@
   <!-- Upstream Yocto & OpenEmbedded Projects -->
   <project name="poky" revision="zeus" remote="yocto" path="yocto-bsp/sources/poky"/>
   <project remote="oe" revision="zeus" name="meta-openembedded" path="yocto-bsp/sources/meta-openembedded"/>
+  <project remote="yocto" revision="zeus" name="meta-virtualization" path="yocto-bsp/sources/meta-virtualization"/>
 
   <!-- rte meta layers -->
   <project name="rte/votp/meta-rte" revision="master" remote="sfl_gerrit" path="yocto-bsp/sources/meta-rte"/>
