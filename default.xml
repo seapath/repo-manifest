@@ -18,6 +18,7 @@
   <project remote="yocto" revision="zeus" name="meta-security" path="yocto-bsp/sources/meta-security"/>
   <project remote="yocto" revision="zeus" name="meta-selinux" path="yocto-bsp/sources/meta-selinux"/>
   <project remote="yocto" revision="dunfell" name="meta-cgl" path="yocto-bsp/sources/meta-cgl"/>
+  <project remote="yocto" revision="zeus" name="meta-cloud-services " path="yocto-bsp/sources/meta-cloud-services"/>
 
   <!-- rte meta layers -->
   <project name="rte/votp/meta-rte" revision="master" remote="sfl_gerrit" path="yocto-bsp/sources/meta-rte"/>
