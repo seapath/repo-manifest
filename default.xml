@@ -23,7 +23,7 @@
   <project remote="yocto" revision="zeus" name="meta-cloud-services" path="yocto-bsp/sources/meta-cloud-services"/>
 
   <!-- rte meta layers -->
-  <project name="rte/votp/meta-rte" revision="master" remote="sfl_gerrit" path="yocto-bsp/sources/meta-rte"/>
+  <project name="rte/votp/meta-seapath" revision="master" remote="sfl_gerrit" path="yocto-bsp/sources/meta-seapath"/>
 
   <!-- Other community repositories -->
   <project name="gdoffe/bash_scripting_tools" revision="master" remote="github" path="yocto-bsp/scripts/bash_scripting_tools"/>
