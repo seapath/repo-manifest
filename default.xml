@@ -4,12 +4,12 @@
 <manifest>
   <!-- Remote repositories definition -->
   <remote name="yocto" fetch="git://git.yoctoproject.org"/>
-  <remote name="sfl_gerrit" fetch="../.."/>
+  <remote name="lfenergy_github" fetch="../"/>
   <remote name="github" fetch="https://github.com"/>
   <remote name="oe" fetch="https://github.com/openembedded"/>
 
   <!-- rte main Yocto project -->
-  <project name="rte/votp/yocto-bsp" revision="master" remote="sfl_gerrit" path="yocto-bsp"/>
+  <project name="yocto-bsp" revision="master" remote="lfenergy_github" path="yocto-bsp"/>
 
   <!-- Upstream Yocto & OpenEmbedded Projects -->
   <project name="poky" revision="zeus" remote="yocto" path="yocto-bsp/sources/poky"/>
@@ -23,7 +23,7 @@
   <project remote="yocto" revision="zeus" name="meta-cloud-services" path="yocto-bsp/sources/meta-cloud-services"/>
 
   <!-- rte meta layers -->
-  <project name="rte/votp/meta-seapath" revision="master" remote="sfl_gerrit" path="yocto-bsp/sources/meta-seapath"/>
+  <project name="meta-seapath" revision="master" remote="lfenergy_github" path="yocto-bsp/sources/meta-seapath"/>
 
   <!-- Other community repositories -->
   <project name="gdoffe/bash_scripting_tools" revision="master" remote="github" path="yocto-bsp/scripts/bash_scripting_tools"/>
