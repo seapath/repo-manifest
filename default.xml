@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!-- Copyright (C) 2020, RTE (http://www.rte-france.com) -->
-<!-- This program is distributed under the Apache 2 license. -->
+<!-- SPDX-License-Identifier: Apache-2.0 -->
 <manifest>
   <!-- Remote repositories definition -->
   <remote name="yocto" fetch="git://git.yoctoproject.org"/>
