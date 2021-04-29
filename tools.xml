@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Copyright (C) 2020, RTE (http://www.rte-france.com) -->
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<manifest>
+  <!-- Remote repositories definition -->
+  <remote name="yocto" fetch="git://git.yoctoproject.org"/>
+  <remote name="seapath" fetch="https://github.com/seapath"/>
+  <remote name="github" fetch="https://github.com"/>
+  <remote name="oe" fetch="https://github.com/openembedded"/>
+
+  <!-- rte main Yocto project -->
+  <project name="yocto-bsp" revision="master" remote="seapath" path="yocto-bsp"/>
+
+  <!-- Upstream Yocto & OpenEmbedded Projects -->
+  <project name="poky" revision="zeus" remote="yocto" path="yocto-bsp/sources/poky"/>
+  <project remote="oe" revision="zeus" name="meta-openembedded" path="yocto-bsp/sources/meta-openembedded"/>
+  <project remote="yocto" revision="zeus" name="meta-virtualization" path="yocto-bsp/sources/meta-virtualization"/>
+  <project remote="yocto" revision="zeus" name="meta-dpdk" path="yocto-bsp/sources/meta-dpdk"/>
+  <project remote="yocto" revision="zeus" name="meta-intel" path="yocto-bsp/sources/meta-intel"/>
+  <project remote="yocto" revision="zeus" name="meta-security" path="yocto-bsp/sources/meta-security"/>
+  <project remote="yocto" revision="zeus" name="meta-selinux" path="yocto-bsp/sources/meta-selinux"/>
+  <project remote="yocto" revision="dunfell" name="meta-cgl" path="yocto-bsp/sources/meta-cgl"/>
+  <project remote="yocto" revision="zeus" name="meta-cloud-services" path="yocto-bsp/sources/meta-cloud-services"/>
+
+  <!-- rte meta layers -->
+  <project name="meta-seapath" revision="master" remote="seapath" path="yocto-bsp/sources/meta-seapath"/>
+  <project name="meta-seapath-tools" revision="main" remote="seapath" path="yocto-bsp/sources/meta-seapath-tools"/>
+
+  <!-- Other community repositories -->
+  <project name="gdoffe/bash_scripting_tools" revision="master" remote="github" path="yocto-bsp/scripts/bash_scripting_tools"/>
+  <project name="savoirfairelinux/meta-validation" revision="master" remote="github" path="yocto-bsp/sources/meta-validation"/>
+</manifest>
