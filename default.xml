@@ -8,24 +8,28 @@
   <remote name="github" fetch="https://github.com"/>
   <remote name="oe" fetch="https://github.com/openembedded"/>
 
-  <!-- rte main Yocto project -->
-  <project name="yocto-bsp" revision="master" remote="seapath" path="yocto-bsp"/>
+  <!-- SEAPATH main Yocto project -->
+  <project name="yocto-bsp" revision="master" remote="seapath" path="."/>
 
   <!-- Upstream Yocto & OpenEmbedded Projects -->
-  <project name="poky" revision="zeus" remote="yocto" path="yocto-bsp/sources/poky"/>
-  <project remote="oe" revision="zeus" name="meta-openembedded" path="yocto-bsp/sources/meta-openembedded"/>
-  <project remote="yocto" revision="zeus" name="meta-virtualization" path="yocto-bsp/sources/meta-virtualization"/>
-  <project remote="yocto" revision="zeus" name="meta-dpdk" path="yocto-bsp/sources/meta-dpdk"/>
-  <project remote="yocto" revision="zeus" name="meta-intel" path="yocto-bsp/sources/meta-intel"/>
-  <project remote="yocto" revision="zeus" name="meta-security" path="yocto-bsp/sources/meta-security"/>
-  <project remote="yocto" revision="zeus" name="meta-selinux" path="yocto-bsp/sources/meta-selinux"/>
-  <project remote="yocto" revision="dunfell" name="meta-cgl" path="yocto-bsp/sources/meta-cgl"/>
-  <project remote="yocto" revision="zeus" name="meta-cloud-services" path="yocto-bsp/sources/meta-cloud-services"/>
+  <project name="poky" revision="dunfell" remote="yocto" path="sources/poky"/>
+  <project remote="oe" revision="dunfell" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="yocto" revision="dunfell" name="meta-virtualization" path="sources/meta-virtualization"/>
+  <project remote="yocto" revision="dunfell" name="meta-dpdk" path="sources/meta-dpdk"/>
+  <project remote="yocto" revision="dunfell" name="meta-intel" path="sources/meta-intel"/>
+  <project remote="yocto" revision="dunfell" name="meta-security" path="sources/meta-security"/>
+  <project remote="yocto" revision="dunfell" name="meta-selinux" path="sources/meta-selinux"/>
+  <project remote="yocto" revision="dunfell" name="meta-cgl" path="sources/meta-cgl"/>
+  <project remote="yocto" revision="dunfell" name="meta-cloud-services" path="sources/meta-cloud-services"/>
 
-  <!-- rte meta layers -->
-  <project name="meta-seapath" revision="master" remote="seapath" path="yocto-bsp/sources/meta-seapath"/>
+  <!-- SEAPATH meta layers -->
+  <project name="meta-seapath" revision="master" remote="seapath" path="sources/meta-seapath"/>
+
+  <!-- Other SEAPATH repositories -->
+  <project name="vm_manager" revision="master" remote="seapath" path="sources/vm_manager"/>
 
   <!-- Other community repositories -->
-  <project name="gdoffe/bash_scripting_tools" revision="master" remote="github" path="yocto-bsp/scripts/bash_scripting_tools"/>
-  <project name="savoirfairelinux/meta-validation" revision="master" remote="github" path="yocto-bsp/sources/meta-validation"/>
+  <project name="jiazhang0/meta-secure-core" revision="fa43d5885dae3917466532414f577c9e84a7aabc" remote="github" path="sources/meta-secure-core"/>
+  <project name="savoirfairelinux/bash_scripting_tools" revision="master" remote="github" path="scripts/bash_scripting_tools"/>
+  <project name="savoirfairelinux/meta-validation" revision="master" remote="github" path="sources/meta-validation"/>
 </manifest>
