@@ -3,7 +3,7 @@
 <!-- SPDX-License-Identifier: Apache-2.0 -->
 <manifest>
   <!-- Remote repositories definition -->
-  <remote name="yocto" fetch="git://git.yoctoproject.org"/>
+    <remote name="yocto" fetch="https://git.yoctoproject.org/git"/>
   <remote name="seapath" fetch="https://github.com/seapath"/>
   <remote name="github" fetch="https://github.com"/>
   <remote name="oe" fetch="https://github.com/openembedded"/>
