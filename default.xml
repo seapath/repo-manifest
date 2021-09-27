@@ -32,4 +32,5 @@
   <project name="jiazhang0/meta-secure-core" revision="fa43d5885dae3917466532414f577c9e84a7aabc" remote="github" path="sources/meta-secure-core"/>
   <project name="savoirfairelinux/bash_scripting_tools" revision="master" remote="github" path="scripts/bash_scripting_tools"/>
   <project name="savoirfairelinux/meta-validation" revision="master" remote="github" path="sources/meta-validation"/>
+  <project name="sbabic/meta-swupdate" revision="dunfell" remote="github" path="sources/meta-swupdate"/>
 </manifest>
