@@ -9,7 +9,7 @@
   <remote name="oe" fetch="https://github.com/openembedded"/>
 
   <!-- SEAPATH main Yocto project -->
-  <project name="yocto-bsp" revision="master" remote="seapath" path="."/>
+  <project name="yocto-bsp" revision="main" remote="seapath" path="."/>
 
   <!-- Upstream Yocto & OpenEmbedded Projects -->
   <project name="poky" revision="dunfell" remote="yocto" path="sources/poky"/>
@@ -23,10 +23,10 @@
   <project remote="yocto" revision="dunfell" name="meta-cloud-services" path="sources/meta-cloud-services"/>
 
   <!-- SEAPATH meta layers -->
-  <project name="meta-seapath" revision="master" remote="seapath" path="sources/meta-seapath"/>
+  <project name="meta-seapath" revision="main" remote="seapath" path="sources/meta-seapath"/>
 
   <!-- Other SEAPATH repositories -->
-  <project name="vm_manager" revision="master" remote="seapath" path="sources/vm_manager"/>
+  <project name="vm_manager" revision="main" remote="seapath" path="sources/vm_manager"/>
 
   <!-- Other community repositories -->
   <project name="jiazhang0/meta-secure-core" revision="fa43d5885dae3917466532414f577c9e84a7aabc" remote="github" path="sources/meta-secure-core"/>
