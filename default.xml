@@ -27,6 +27,7 @@
 
   <!-- Other SEAPATH repositories -->
   <project name="vm_manager" revision="main" remote="seapath" path="sources/vm_manager"/>
+  <project name="meta-elastic-beats" revision="main" remote="seapath" path="sources/meta-elastic-beats"/>
 
   <!-- Other community repositories -->
   <project name="jiazhang0/meta-secure-core" revision="fa43d5885dae3917466532414f577c9e84a7aabc" remote="github" path="sources/meta-secure-core"/>
