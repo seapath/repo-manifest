@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Copyright (C) 2020, RTE (http://www.rte-france.com) -->
+<!-- Copyright (C) 2023 Savoir-faire Linux, Inc. -->
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<manifest>
+  <!-- Remote repositories definition -->
+    <remote name="yocto" fetch="https://git.yoctoproject.org/git"/>
+  <remote name="seapath" fetch="https://github.com/seapath"/>
+  <remote name="github" fetch="https://github.com"/>
+  <remote name="oe" fetch="https://github.com/openembedded"/>
+
+  <!-- SEAPATH main Yocto project -->
+  <project name="yocto-bsp" revision="kirkstone" remote="seapath" path="."/>
+
+  <!-- Upstream Yocto & OpenEmbedded Projects -->
+  <project name="poky" revision="kirkstone" remote="yocto" path="sources/poky"/>
+  <project remote="oe" revision="kirkstone" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="yocto" revision="kirkstone" name="meta-virtualization" path="sources/meta-virtualization"/>
+  <project remote="yocto" revision="kirkstone" name="meta-dpdk" path="sources/meta-dpdk"/>
+  <project remote="yocto" revision="kirkstone" name="meta-intel" path="sources/meta-intel"/>
+  <project remote="yocto" revision="kirkstone" name="meta-security" path="sources/meta-security"/>
+  <project remote="yocto" revision="kirkstone" name="meta-selinux" path="sources/meta-selinux"/>
+  <project remote="yocto" revision="kirkstone" name="meta-cgl" path="sources/meta-cgl"/>
+  <project remote="yocto" revision="kirkstone" name="meta-cloud-services" path="sources/meta-cloud-services"/>
+
+  <!-- SEAPATH meta layers -->
+  <project name="meta-seapath" revision="kirkstone" remote="seapath" path="sources/meta-seapath"/>
+
+  <!-- Other SEAPATH repositories -->
+  <project name="vm_manager" revision="main" remote="seapath" path="sources/vm_manager"/>
+  <project name="python3-setup-ovs" revision="main" remote="seapath" path="sources/python3-setup-ovs"/>
+  <project name="meta-elastic-beats" revision="main" remote="seapath" path="sources/meta-elastic-beats"/>
+
+  <!-- Other community repositories -->
+  <project name="Wind-River/meta-secure-core" revision="kirkstone" remote="github" path="sources/meta-secure-core"/>
+  <project name="kraj/meta-clang" revision="kirkstone" remote="github" path="sources/meta-clang"/>
+  <project name="sbabic/meta-swupdate" revision="kirkstone" remote="github" path="sources/meta-swupdate"/>
+</manifest>

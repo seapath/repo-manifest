@@ -1,4 +1,5 @@
 // Copyright (C) 2020, RTE (http://www.rte-france.com)
+// Copyright (C) 2023 Savoir-faire Linux, Inc.
 // SPDX-License-Identifier: CC-BY-4.0
 
 = Repository manifest
@@ -13,14 +14,21 @@ to build the system:
 
 ```
 # Use a work directory for your project
-$ mkdir my_project_name
-$ cd my_project_name/
+$ mkdir seapath
+$ cd seapath/
 ```
 
 Next checkout repositories using the repo-manifest:
 
 ```
-$ repo init -u ssh://your-git-host/path/to/repo-manifest"
+$ repo init -u "https://github.com/seapath/repo-manifest.git"
+$ repo sync
+```
+
+To checkout the dunfell version:
+
+```
+$ repo init -u "https://github.com/seapath/repo-manifest.git" -m dunfell.xml
 $ repo sync
 ```
 
