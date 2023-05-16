@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!-- Copyright (C) 2020, RTE (http://www.rte-france.com) -->
+<!-- Copyright (C) 2023 Savoir-faire Linux, Inc. -->
 <!-- SPDX-License-Identifier: Apache-2.0 -->
 <manifest>
   <!-- Remote repositories definition -->
@@ -9,7 +10,7 @@
   <remote name="oe" fetch="https://github.com/openembedded"/>
 
   <!-- SEAPATH main Yocto project -->
-  <project name="yocto-bsp" revision="main" remote="seapath" path="."/>
+  <project name="yocto-bsp" revision="dunfell" remote="seapath" path="."/>
 
   <!-- Upstream Yocto & OpenEmbedded Projects -->
   <project name="poky" revision="dunfell" remote="yocto" path="sources/poky"/>
@@ -23,7 +24,7 @@
   <project remote="yocto" revision="dunfell" name="meta-cloud-services" path="sources/meta-cloud-services"/>
 
   <!-- SEAPATH meta layers -->
-  <project name="meta-seapath" revision="main" remote="seapath" path="sources/meta-seapath"/>
+  <project name="meta-seapath" revision="dunfell" remote="seapath" path="sources/meta-seapath"/>
 
   <!-- Other SEAPATH repositories -->
   <project name="vm_manager" revision="main" remote="seapath" path="sources/vm_manager"/>
