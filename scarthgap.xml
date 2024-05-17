@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Copyright (C) 2020, RTE (http://www.rte-france.com) -->
+<!-- Copyright (C) 2023-2024 Savoir-faire Linux, Inc. -->
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<manifest>
+  <!-- Remote repositories definition -->
+  <remote name="yocto" fetch="git://git.yoctoproject.org"/>
+  <remote name="github" fetch="https://github.com/"/>
+  <remote name="seapath" fetch="https://github.com/seapath"/>
+  <remote name="oe" fetch="https://github.com/openembedded"/>
+
+  <!-- SEAPATH main Yocto project -->
+  <project name="yocto-bsp" revision="scarthgap" remote="seapath" path="."/>
+
+
+  <!-- Upstream Yocto & OpenEmbedded Projects -->
+  <project name="poky" revision="scarthgap" remote="yocto" path="sources/poky"/>
+  <project remote="oe" revision="scarthgap" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="yocto" revision="scarthgap" name="meta-virtualization" path="sources/meta-virtualization"/>
+  <project remote="yocto" revision="scarthgap" name="meta-dpdk" path="sources/meta-dpdk"/>
+  <project remote="yocto" revision="scarthgap" name="meta-intel" path="sources/meta-intel"/>
+  <project remote="yocto" revision="scarthgap" name="meta-security" path="sources/meta-security"/>
+  <project remote="yocto" revision="scarthgap" name="meta-selinux" path="sources/meta-selinux"/>
+  <project remote="yocto" revision="f7c4e7165fa32543e0b881d6cd3048458896f535" name="meta-cgl" path="sources/meta-cgl"/>
+  <project remote="yocto" revision="scarthgap" name="meta-cloud-services" path="sources/meta-cloud-services"/>
+
+  <!-- SEAPATH meta layers -->
+  <project name="meta-seapath" revision="scarthgap" remote="seapath" path="sources/meta-seapath"/>
+
+  <!-- Other community repositories -->
+  <project name="agherzan/meta-raspberrypi" revision="scarthgap" remote="github" path="sources/meta-raspberrypi"/>
+  <project name="Wind-River/meta-secure-core" revision="scarthgap" remote="github" path="sources/meta-secure-core"/>
+  <project name="kraj/meta-clang" revision="scarthgap" remote="github" path="sources/meta-clang"/>
+  <project name="sbabic/meta-swupdate" revision="scarthgap" remote="github" path="sources/meta-swupdate"/>
+</manifest>
