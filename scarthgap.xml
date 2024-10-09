@@ -10,7 +10,7 @@
   <remote name="oe" fetch="https://github.com/openembedded"/>
 
   <!-- SEAPATH main Yocto project -->
-  <project name="yocto-bsp" revision="scarthgap" remote="seapath" path="."/>
+  <project name="yocto-bsp" revision="scarthgap-migration" remote="seapath" path="."/>
 
   <!-- Upstream Yocto & OpenEmbedded Projects -->
   <project name="poky" revision="scarthgap" remote="yocto" path="sources/poky"/>
@@ -24,7 +24,7 @@
   <project remote="yocto" revision="scarthgap" name="meta-cloud-services" path="sources/meta-cloud-services"/>
 
   <!-- SEAPATH meta layers -->
-  <project name="meta-seapath" revision="scarthgap" remote="seapath" path="sources/meta-seapath"/>
+  <project name="meta-seapath" revision="scarthgap-migration" remote="seapath" path="sources/meta-seapath"/>
 
   <!-- Other SEAPATH repositories -->
   <project name="vm_manager" revision="main" remote="seapath" path="sources/vm_manager"/>
