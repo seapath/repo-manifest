@@ -27,6 +27,7 @@
   <project name="meta-seapath" revision="kirkstone" remote="seapath" path="sources/meta-seapath"/>
 
   <!-- Other community repositories -->
+  <project name="agherzan/meta-raspberrypi" revision="kirkstone" remote="github" path="sources/meta-raspberrypi"/>
   <project name="Wind-River/meta-secure-core" revision="kirkstone" remote="github" path="sources/meta-secure-core"/>
   <project name="kraj/meta-clang" revision="kirkstone" remote="github" path="sources/meta-clang"/>
   <project name="sbabic/meta-swupdate" revision="kirkstone" remote="github" path="sources/meta-swupdate"/>
