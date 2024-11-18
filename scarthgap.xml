@@ -21,7 +21,7 @@
   <project remote="yocto" revision="scarthgap" name="meta-intel" path="sources/meta-intel"/>
   <project remote="yocto" revision="scarthgap" name="meta-security" path="sources/meta-security"/>
   <project remote="yocto" revision="scarthgap" name="meta-selinux" path="sources/meta-selinux"/>
-  <project remote="yocto" revision="f7c4e7165fa32543e0b881d6cd3048458896f535" name="meta-cgl" path="sources/meta-cgl"/>
+  <project remote="yocto" revision="scarthgap" name="meta-cgl" path="sources/meta-cgl"/>
   <project remote="yocto" revision="scarthgap" name="meta-cloud-services" path="sources/meta-cloud-services"/>
 
   <!-- SEAPATH meta layers -->
