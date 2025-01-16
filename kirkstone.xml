@@ -1,13 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!-- Copyright (C) 2020, RTE (http://www.rte-france.com) -->
-<!-- Copyright (C) 2023 Savoir-faire Linux, Inc. -->
+<!-- Copyright (C) 2023-2025 Savoir-faire Linux, Inc. -->
 <!-- SPDX-License-Identifier: Apache-2.0 -->
 <manifest>
   <!-- Remote repositories definition -->
-    <remote name="yocto" fetch="https://git.yoctoproject.org/git"/>
+  <remote name="yocto" fetch="https://git.yoctoproject.org/git"/>
   <remote name="seapath" fetch="https://github.com/seapath"/>
   <remote name="github" fetch="https://github.com"/>
   <remote name="oe" fetch="https://github.com/openembedded"/>
+  <remote name="aaeon" fetch="https://github.com/aaeonaeu"/>
 
   <!-- SEAPATH main Yocto project -->
   <project name="yocto-bsp" revision="kirkstone" remote="seapath" path="."/>
@@ -31,4 +32,13 @@
   <project name="Wind-River/meta-secure-core" revision="kirkstone" remote="github" path="sources/meta-secure-core"/>
   <project name="kraj/meta-clang" revision="kirkstone" remote="github" path="sources/meta-clang"/>
   <project name="sbabic/meta-swupdate" revision="kirkstone" remote="github" path="sources/meta-swupdate"/>
+
+  <!-- NXP layers, taken from https://github.com/nxp-imx/imx-manifest.git branch imx-linux-kirkstone manifest imx-5.15.71-2.2.0.xml -->
+  <project name="Freescale/meta-freescale" path="sources/meta-freescale" remote="github" revision="c82d4634e7aba8bc0de73ce1dfc997b630051571" upstream="kirkstone"/>
+  <project name="Freescale/meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" remote="github" revision="5977197340c7a7db17fe3e02a4e014ad997565ae" upstream="kirkstone"/>
+  <project name="Freescale/meta-freescale-distro" path="sources/meta-freescale-distro" remote="github" revision="d5bbb487b2816dfc74984a78b67f7361ce404253" upstream="kirkstone"/>
+  <project name="nxp-imx/meta-imx" path="sources/meta-imx" remote="github" revision="refs/tags/rel_imx_5.15.71_2.2.2" upstream="kirkstone-5.15.71-2.2.2"/>
+
+  <!-- AAEON meta -->
+  <project name="meta-aaeon-nxpimx8" path="sources/meta-aaeon-nxpimx8" remote="aaeon" revision="f4e020a3dd716852ad0d187980a09ef2fef895f2"/>
 </manifest>
