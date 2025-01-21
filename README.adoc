@@ -1,5 +1,5 @@
 // Copyright (C) 2020, RTE (http://www.rte-france.com)
-// Copyright (C) 2023 Savoir-faire Linux, Inc.
+// Copyright (C) 2023-2025 Savoir-faire Linux, Inc.
 // SPDX-License-Identifier: CC-BY-4.0
 
 = Repository manifest
@@ -14,22 +14,29 @@ to build the system:
 
 ```
 # Use a work directory for your project
-$ mkdir seapath
-$ cd seapath/
+mkdir seapath
+cd seapath/
 ```
 
 Next checkout repositories using the repo-manifest:
 
 ```
-$ repo init -u "https://github.com/seapath/repo-manifest.git"
-$ repo sync
+repo init -u "https://github.com/seapath/repo-manifest.git"
+repo sync
 ```
 
 To checkout the dunfell version:
 
 ```
-$ repo init -u "https://github.com/seapath/repo-manifest.git" -m dunfell.xml
-$ repo sync
+repo init -u "https://github.com/seapath/repo-manifest.git" -m dunfell.xml
+repo sync
+```
+
+To checkout the v1.0.0 version:
+
+```
+repo init -b v1.0.0 -u "https://github.com/seapath/repo-manifest.git"
+repo sync
 ```
 
 The system's repositories will then be checked out in the current directory at
@@ -52,7 +59,7 @@ The `repo` tool can be installed on Linux using your distro's package manager:
 On Debian/Ubuntu systems, use the following command:
 
 ```
-$ sudo apt install repo
+sudo apt install repo
 ```
 
 For other systems, the homepage of the project is at
