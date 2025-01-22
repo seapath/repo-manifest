@@ -25,7 +25,7 @@
   <project remote="yocto" revision="3904c521fce351ad4bcc6760ddb8ff411016c77e" name="meta-cloud-services" path="sources/meta-cloud-services"/>
 
   <!-- SEAPATH meta layers -->
-  <project name="meta-seapath" revision="8f58416f6bf6ed9d98f5c1f6676d95e8dc7dfd5a" remote="seapath" path="sources/meta-seapath"/>
+  <project name="meta-seapath" revision="e994bbbdceea9182ba2bce2a46f848f62cb7083e" remote="seapath" path="sources/meta-seapath"/>
 
   <!-- Other community repositories -->
   <project name="agherzan/meta-raspberrypi" revision="6df7e028a2b7b2d8cab0745dc0ed2eebc3742a17" remote="github" path="sources/meta-raspberrypi"/>
