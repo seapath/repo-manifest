@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Copyright (C) 2020, RTE (http://www.rte-france.com) -->
+<!-- Copyright (C) 2023-2025 Savoir-faire Linux, Inc. -->
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<manifest>
+  <!-- Remote repositories definition -->
+  <remote name="yocto" fetch="git://git.yoctoproject.org"/>
+  <remote name="github" fetch="https://github.com/"/>
+  <remote name="seapath" fetch="https://github.com/seapath"/>
+  <remote name="oe" fetch="https://github.com/openembedded"/>
+
+  <!-- SEAPATH main Yocto project -->
+  <project name="yocto-bsp" revision="f649c02ce862baf2b7d5cad06a7b4d7d912a3ec3" remote="seapath" path="."/>
+
+
+  <!-- Upstream Yocto & OpenEmbedded Projects -->
+  <project name="poky" revision="ce9f4eaaae324ef4182a39293f3a6b2aa7207680" remote="yocto" path="sources/poky"/>
+  <project remote="oe" revision="4f11a12b2352bbdfafb6b7d956bf424af4992977" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="yocto" revision="79673f5c67b022e7aadeb231872470295e5b9188" name="meta-virtualization" path="sources/meta-virtualization"/>
+  <project remote="yocto" revision="2b03da4eba7b5ffa6dc8dbe79c0413f4989c7b8d" name="meta-dpdk" path="sources/meta-dpdk"/>
+  <project remote="yocto" revision="0be954e82f09d235d2b5e5ea01bb62ffa8d0b5f7" name="meta-intel" path="sources/meta-intel"/>
+  <project remote="yocto" revision="bc865c5276c2ab4031229916e8d7c20148dfbac3" name="meta-security" path="sources/meta-security"/>
+  <project remote="yocto" revision="3aff015697fa056b4af83b1c9ba44eca346a8a37" name="meta-selinux" path="sources/meta-selinux"/>
+  <project remote="yocto" revision="f7c4e7165fa32543e0b881d6cd3048458896f535" name="meta-cgl" path="sources/meta-cgl"/>
+  <project remote="yocto" revision="3904c521fce351ad4bcc6760ddb8ff411016c77e" name="meta-cloud-services" path="sources/meta-cloud-services"/>
+
+  <!-- SEAPATH meta layers -->
+  <project name="meta-seapath" revision="25822a69b997a60a225f2c50c0189746acc41a71" remote="seapath" path="sources/meta-seapath"/>
+
+  <!-- Other community repositories -->
+  <project name="agherzan/meta-raspberrypi" revision="6df7e028a2b7b2d8cab0745dc0ed2eebc3742a17" remote="github" path="sources/meta-raspberrypi"/>
+  <project name="Wind-River/meta-secure-core" revision="7a51f091cccfb8f629ce962f13b7b45d23005093" remote="github" path="sources/meta-secure-core"/>
+  <project name="kraj/meta-clang" revision="8c77b427408db01b8de4c04bd3d247c13c154f92" remote="github" path="sources/meta-clang"/>
+  <project name="sbabic/meta-swupdate" revision="d598d4e675b541301ea1dfc8f0c8931983b4dcd0" remote="github" path="sources/meta-swupdate"/>
+</manifest>
