@@ -25,10 +25,10 @@ repo init -u "https://github.com/seapath/repo-manifest.git"
 repo sync
 ```
 
-To checkout the dunfell version:
+To checkout the kirkstone version:
 
 ```
-repo init -u "https://github.com/seapath/repo-manifest.git" -m dunfell.xml
+repo init -u "https://github.com/seapath/repo-manifest.git" -m kirkstone.xml
 repo sync
 ```
 
