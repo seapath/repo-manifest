@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (C) 2025 Savoir-faire Linux, Inc. -->
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<manifest>
+  <remote name="github" fetch="https://github.com/"/>
+  <remote name="oe" fetch="https://github.com/openembedded"/>
+  <remote name="seapath" fetch="https://github.com/seapath"/>
+  <remote name="yocto" fetch="git://git.yoctoproject.org"/>
+
+  <project name="Wind-River/meta-secure-core" path="sources/meta-secure-core" remote="github" revision="eba66ba00566110d3bcdfe2fef47f81d4806012b" upstream="scarthgap" dest-branch="scarthgap"/>
+  <project name="agherzan/meta-raspberrypi" path="sources/meta-raspberrypi" remote="github" revision="aaf976a665daa7e520545908adef8a0e9410b57f" upstream="scarthgap" dest-branch="scarthgap"/>
+  <project name="kraj/meta-clang" path="sources/meta-clang" remote="github" revision="057ee563305e9484b29d02347aeafdadc5ea28ed" upstream="scarthgap" dest-branch="scarthgap"/>
+  <project name="meta-cgl" path="sources/meta-cgl" remote="yocto" revision="f7c4e7165fa32543e0b881d6cd3048458896f535" upstream="scarthgap" dest-branch="scarthgap"/>
+  <project name="meta-cloud-services" path="sources/meta-cloud-services" remote="yocto" revision="ea865f6965128d61602e7d20e1ab8554ce05633a" upstream="scarthgap" dest-branch="scarthgap"/>
+  <project name="meta-dpdk" path="sources/meta-dpdk" remote="yocto" revision="2b03da4eba7b5ffa6dc8dbe79c0413f4989c7b8d" upstream="scarthgap" dest-branch="scarthgap"/>
+  <project name="meta-intel" path="sources/meta-intel" remote="yocto" revision="6fc37057c7f0293a2345e303588901889df8b937" upstream="scarthgap" dest-branch="scarthgap"/>
+  <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="e621da947048842109db1b4fd3917a02e0501aa2" upstream="scarthgap" dest-branch="scarthgap"/>
+  <project name="meta-seapath" path="sources/meta-seapath" remote="seapath" revision="607161c673e0ae08cf4e72a865b99c4d8bfa5536" upstream="scarthgap" dest-branch="scarthgap"/>
+  <project name="meta-security" path="sources/meta-security" remote="yocto" revision="bc865c5276c2ab4031229916e8d7c20148dfbac3" upstream="scarthgap" dest-branch="scarthgap"/>
+  <project name="meta-selinux" path="sources/meta-selinux" remote="yocto" revision="c999577d7ab4b1b54fff61ab15c46a6f9e242d0d" upstream="scarthgap" dest-branch="scarthgap"/>
+  <project name="meta-virtualization" path="sources/meta-virtualization" remote="yocto" revision="af1db2042caf8021d767dce1b26c08b59b96f3d1" upstream="scarthgap" dest-branch="scarthgap"/>
+  <project name="poky" path="sources/poky" remote="yocto" revision="e3ce89324da1e33c17c9180ef846f41d92616254" upstream="scarthgap" dest-branch="scarthgap"/>
+  <project name="sbabic/meta-swupdate" path="sources/meta-swupdate" remote="github" revision="43ef322cbf5b91d84b007c343cf73e9b01699594" upstream="scarthgap" dest-branch="scarthgap"/>
+  <project name="yocto-bsp" path="." remote="seapath" revision="1f40cb16c142fc6866cf72a94e99f57da8f35f60" upstream="scarthgap" dest-branch="scarthgap"/>
+</manifest>
