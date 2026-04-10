@@ -1,5 +1,5 @@
 // Copyright (C) 2020, RTE (http://www.rte-france.com)
-// Copyright (C) 2023-2025 Savoir-faire Linux, Inc.
+// Copyright (C) 2023-2026 Savoir-faire Linux, Inc.
 // SPDX-License-Identifier: CC-BY-4.0
 
 = Repository manifest
@@ -32,10 +32,10 @@ repo init -u "https://github.com/seapath/repo-manifest.git" -m kirkstone.xml
 repo sync
 ```
 
-To checkout the v1.2.0 version:
+To checkout the v1.2.1 version:
 
 ```
-repo init -u "https://github.com/seapath/repo-manifest.git" -m v1.2.0.xml
+repo init -u "https://github.com/seapath/repo-manifest.git" -m v1.2.1.xml
 repo sync
 ```
 
