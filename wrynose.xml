@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Copyright (C) 2020, RTE (http://www.rte-france.com) -->
+<!-- Copyright (C) 2023-2024 Savoir-faire Linux, Inc. -->
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<manifest>
+  <!-- Remote repositories definition -->
+  <remote name="yocto" fetch="git://git.yoctoproject.org"/>
+  <remote name="github" fetch="https://github.com/"/>
+  <remote name="seapath" fetch="https://github.com/seapath"/>
+  <remote name="oe" fetch="git://git.openembedded.org"/>
+  <remote name="fork" fetch="https://github.com/paullgk"/>
+
+  <!-- SEAPATH main Yocto project -->
+  <project name="yocto-bsp" revision="wrynose" remote="fork" path="."/>
+
+  <!-- Upstream Yocto & OpenEmbedded Projects -->
+  <project name="bitbake" revision="master" remote="oe" path="sources/poky/bitbake"/>
+  <project name="meta-yocto" revision="master" remote="yocto" path="sources/poky/meta-yocto"/>
+  <project name="openembedded-core" revision="master" remote="oe" path="sources/poky"/>
+  <project remote="oe" revision="master" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="yocto" revision="master" name="meta-virtualization" path="sources/meta-virtualization"/>
+  <project remote="yocto" revision="master" name="meta-dpdk" path="sources/meta-dpdk"/>
+  <project remote="yocto" revision="master" name="meta-intel" path="sources/meta-intel"/>
+  <project remote="yocto" revision="master" name="meta-security" path="sources/meta-security"/>
+  <project remote="yocto" revision="master" name="meta-selinux" path="sources/meta-selinux"/>
+  <project remote="yocto" revision="master" name="meta-cgl" path="sources/meta-cgl"/>
+  <project remote="yocto" revision="master" name="meta-cloud-services" path="sources/meta-cloud-services"/>
+
+  <!-- SEAPATH meta layers -->
+  <project name="meta-seapath" revision="wrynose" remote="fork" path="sources/meta-seapath"/>
+
+  <!-- Other community repositories -->
+  <project name="agherzan/meta-raspberrypi" revision="master" remote="github" path="sources/meta-raspberrypi"/>
+  <project name="Wind-River/meta-secure-core" revision="master" remote="github" path="sources/meta-secure-core"/>
+  <project name="kraj/meta-clang" revision="master" remote="github" path="sources/meta-clang"/>
+  <project name="sbabic/meta-swupdate" revision="wrynose" remote="github" path="sources/meta-swupdate"/>
+</manifest>
