@@ -14,10 +14,10 @@
   <project name="yocto-bsp" revision="wrynose" remote="fork" path="."/>
 
   <!-- Upstream Yocto & OpenEmbedded Projects -->
-  <project name="bitbake" revision="2.18" remote="oe" path="sources/poky/bitbake"/>
-  <project name="meta-yocto" revision="wrynose" remote="yocto" path="sources/poky/meta-yocto"/>
-  <project name="openembedded-core" revision="wrynose" remote="oe" path="sources/poky"/>
-  <project name="wic" revision="master" remote="yocto" path="sources/poky/wic"/>
+  <project name="bitbake" revision="2.18" remote="oe" path="sources/bitbake"/>
+  <project name="meta-yocto" revision="wrynose" remote="yocto" path="sources/meta-yocto"/>
+  <project name="openembedded-core" revision="wrynose" remote="oe" path="sources/openembedded-core"/>
+
   <project remote="oe" revision="wrynose" name="meta-openembedded" path="sources/meta-openembedded"/>
   <project remote="yocto" revision="master" name="meta-virtualization" path="sources/meta-virtualization"/>
   <project remote="yocto" revision="master" name="meta-dpdk" path="sources/meta-dpdk"/>
