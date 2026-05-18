@@ -25,6 +25,14 @@ repo init -u "https://github.com/seapath/repo-manifest.git"
 repo sync
 ```
 
+To checkout the scarthgap version:
+
+```
+repo init -u "https://github.com/seapath/repo-manifest.git" -m scarthgap.xml
+repo sync
+```
+
+
 To checkout the kirkstone version:
 
 ```
