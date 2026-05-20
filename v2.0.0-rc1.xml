@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Copyright (C) 2026 Savoir-faire Linux, Inc. -->
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<manifest>
+  <!-- Remote repositories definition -->
+  <remote name="yocto" fetch="https://git.yoctoproject.org"/>
+  <remote name="github" fetch="https://github.com/"/>
+  <remote name="seapath" fetch="https://github.com/seapath"/>
+  <remote name="oe" fetch="https://git.openembedded.org"/>
+
+  <!-- SEAPATH main Yocto project -->
+  <project name="yocto-bsp" revision="0e67162333fa387b526e81d81f5851365246205f" remote="seapath" path="."/>
+
+  <!-- Upstream Yocto & OpenEmbedded Projects -->
+  <project name="bitbake" revision="0415a00658b59f66bdab22a3558794f238c42973" remote="oe" path="sources/bitbake"/>
+  <project name="meta-yocto" revision="904846ae078ee20de073040ebb77c86e19250f56" remote="yocto" path="sources/meta-yocto"/>
+  <project name="openembedded-core" revision="080e184ad9a07b469da7e8b045a93cefd5bf2438" remote="oe" path="sources/openembedded-core"/>
+
+  <project remote="oe" revision="420222862f5a6d95023b8f5f3b7e1808b2264ef9" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="yocto" revision="e1bdfe90563487f0a3253cd4b0d5bb7fa5194d83" name="meta-virtualization" path="sources/meta-virtualization"/>
+  <project remote="yocto" revision="c4e58978ce61c47c2f54206e07f9ad46be2ed257" name="meta-dpdk" path="sources/meta-dpdk"/>
+  <project remote="yocto" revision="ff8ad78a0e3531060aa712b708cc01178c564a69" name="meta-intel" path="sources/meta-intel"/>
+  <project remote="yocto" revision="925357d25af4534807647d2a1d99e5b6c6df3af4" name="meta-security" path="sources/meta-security"/>
+  <project remote="yocto" revision="1ba26da4b9bec3f102bd831efe0db00c7d61f7f2" name="meta-selinux" path="sources/meta-selinux"/>
+  <project remote="yocto" revision="efbec7502e8027d350c05997678c12aa35662f0e" name="meta-cgl" path="sources/meta-cgl"/>
+  <project remote="yocto" revision="74403ddda46ff852997a065fe603d3bb1a6eaed1" name="meta-cloud-services" path="sources/meta-cloud-services"/>
+
+  <!-- SEAPATH meta layers -->
+  <project name="meta-seapath" revision="03999f59137736ab2ccccb4fcf45b66f1f864119" remote="seapath" path="sources/meta-seapath"/>
+
+  <!-- Other community repositories -->
+  <project name="Wind-River/meta-secure-core" revision="07a99ae241acd488a2feda1ededf87dc70dfde80" remote="github" path="sources/meta-secure-core"/>
+  <project name="sbabic/meta-swupdate" revision="74532b19cb5939d39ca777264e1029534279e6f3" remote="github" path="sources/meta-swupdate"/>
+</manifest>
