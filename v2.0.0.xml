@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github" fetch="https://github.com/"/>
+  <remote name="oe" fetch="https://git.openembedded.org"/>
+  <remote name="seapath" fetch="https://github.com/seapath"/>
+  <remote name="yocto" fetch="https://git.yoctoproject.org"/>
+  
+  <project name="Wind-River/meta-secure-core" path="sources/meta-secure-core" remote="github" revision="07a99ae241acd488a2feda1ededf87dc70dfde80" upstream="wrynose" dest-branch="wrynose"/>
+  <project name="bitbake" path="sources/bitbake" remote="oe" revision="294074e65f37822a0f31bb11eb968d311b54a66a" upstream="2.18" dest-branch="2.18"/>
+  <project name="meta-cgl" path="sources/meta-cgl" remote="yocto" revision="efbec7502e8027d350c05997678c12aa35662f0e"/>
+  <project name="meta-cloud-services" path="sources/meta-cloud-services" remote="yocto" revision="74403ddda46ff852997a065fe603d3bb1a6eaed1" upstream="wrynose" dest-branch="wrynose"/>
+  <project name="meta-dpdk" path="sources/meta-dpdk" remote="yocto" revision="c4e58978ce61c47c2f54206e07f9ad46be2ed257"/>
+  <project name="meta-intel" path="sources/meta-intel" remote="yocto" revision="ff8ad78a0e3531060aa712b708cc01178c564a69"/>
+  <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="a43f0d532c399458cae44ce66f3799a220fbb497" upstream="wrynose" dest-branch="wrynose"/>
+  <project name="meta-seapath" path="sources/meta-seapath" remote="seapath" revision="f05fd3adfb4da2886b04a92c3d4a0956ac99f193" upstream="wrynose" dest-branch="wrynose"/>
+  <project name="meta-security" path="sources/meta-security" remote="yocto" revision="c0d1d6200e7a84c39fb940cb1f22aad4b0b3d808" upstream="wrynose" dest-branch="wrynose"/>
+  <project name="meta-selinux" path="sources/meta-selinux" remote="yocto" revision="1c3a699f363167571ab39fecb0fe6f56691a4e20" upstream="wrynose" dest-branch="wrynose"/>
+  <project name="meta-virtualization" path="sources/meta-virtualization" remote="yocto" revision="959a211fbba059689a1c3a1b24fe0abb9224281a" upstream="wrynose" dest-branch="wrynose"/>
+  <project name="meta-yocto" path="sources/meta-yocto" remote="yocto" revision="8251bdad5fda780a000fb41e6eda82eadf0fa39e" upstream="wrynose" dest-branch="wrynose"/>
+  <project name="openembedded-core" path="sources/openembedded-core" remote="oe" revision="06dd66e6220e5ce4ed4b9af4d8231ae5f0a8ce80" upstream="wrynose" dest-branch="wrynose"/>
+  <project name="sbabic/meta-swupdate" path="sources/meta-swupdate" remote="github" revision="4cfc4c98e6318c3fb1117141701de9c506bbce50" upstream="wrynose" dest-branch="wrynose"/>
+  <project name="yocto-bsp" path="." remote="seapath" revision="18242d85c586476eeea70ebe480fd2731dfe781f" upstream="wrynose" dest-branch="wrynose"/>
+</manifest>
