@@ -25,25 +25,25 @@ repo init -u "https://github.com/seapath/repo-manifest.git"
 repo sync
 ```
 
-To checkout the scarthgap version:
+You can checkout several Yocto version:
 
+- kirkstone
+- scarthgap
+- wrynose
+
+To checkout a version, point to the appropriate xml file:
+
+Example with wrynose
 ```
-repo init -u "https://github.com/seapath/repo-manifest.git" -m scarthgap.xml
+repo init -u "https://github.com/seapath/repo-manifest.git" -m wrynose.xml
 repo sync
 ```
 
-
-To checkout the kirkstone version:
-
-```
-repo init -u "https://github.com/seapath/repo-manifest.git" -m kirkstone.xml
-repo sync
-```
-
-To checkout the v1.2.1 version:
+It is also possible to fetch a version with frozen revision:
+For instance, to checkout the v2.0.0 version:
 
 ```
-repo init -u "https://github.com/seapath/repo-manifest.git" -m v1.2.1.xml
+repo init -u "https://github.com/seapath/repo-manifest.git" -m v2.0.0.xml
 repo sync
 ```
 
