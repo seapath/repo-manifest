@@ -5,7 +5,7 @@
   <remote name="github" fetch="https://github.com/"/>
   <remote name="oe" fetch="https://github.com/openembedded"/>
   <remote name="seapath" fetch="https://github.com/seapath"/>
-  <remote name="yocto" fetch="git://git.yoctoproject.org"/>
+  <remote name="yocto" fetch="https://git.yoctoproject.org"/>
 
   <project name="Wind-River/meta-secure-core" path="sources/meta-secure-core" remote="github" revision="eba66ba00566110d3bcdfe2fef47f81d4806012b" upstream="scarthgap" dest-branch="scarthgap"/>
   <project name="agherzan/meta-raspberrypi" path="sources/meta-raspberrypi" remote="github" revision="aaf976a665daa7e520545908adef8a0e9410b57f" upstream="scarthgap" dest-branch="scarthgap"/>
