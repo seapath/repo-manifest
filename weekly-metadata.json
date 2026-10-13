@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "weekly_id": "weekly-2026-W34",
+  "created_at": "2026-08-23T00:00:00Z",
+  "cut_at": "2026-08-23T00:00:00Z",
+  "source_manifest": "wrynose.xml",
+  "manifest": "weekly.xml",
+  "manifest_sha256": "eb4dc19a22f08d3da839e1508102e398eaf1f9438db6a4166e1e7a3c713ee5f0",
+  "previous_weekly": null,
+  "projects": {
+    "Wind-River/meta-secure-core": "07a99ae241acd488a2feda1ededf87dc70dfde80",
+    "bitbake": "acfe02fa38b5da9e6a36c6cedcf91d4fcbefbfbd",
+    "meta-cgl": "efbec7502e8027d350c05997678c12aa35662f0e",
+    "meta-cloud-services": "74403ddda46ff852997a065fe603d3bb1a6eaed1",
+    "meta-dpdk": "c4e58978ce61c47c2f54206e07f9ad46be2ed257",
+    "meta-intel": "ff8ad78a0e3531060aa712b708cc01178c564a69",
+    "meta-openembedded": "100027977216601000cbefc42c2ff6cf667e7b5e",
+    "meta-seapath": "5a170a0910d99930eea2b8b0c81fab7626e027db",
+    "meta-security": "c0d1d6200e7a84c39fb940cb1f22aad4b0b3d808",
+    "meta-selinux": "1c3a699f363167571ab39fecb0fe6f56691a4e20",
+    "meta-virtualization": "781735b97ae5013cacabbecd38e6da6b510cf3fb",
+    "meta-yocto": "824795b885b25e074a2880fbcd54e1a6c875d47d",
+    "openembedded-core": "c2746a4a165fd99c2d1aafed17533555787f37ce",
+    "sbabic/meta-swupdate": "c3eba00d3252ef17fed4812473c47c87fb34db40",
+    "yocto-bsp": "cdecf61f0a186d5e94595ce6799de24950fdf551"
+  }
+}
