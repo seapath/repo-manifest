@@ -20,7 +20,7 @@
   <project name="meta-selinux" path="sources/meta-selinux" remote="yocto" revision="1c3a699f363167571ab39fecb0fe6f56691a4e20" upstream="wrynose" dest-branch="wrynose"/>
   <project name="meta-virtualization" path="sources/meta-virtualization" remote="yocto" revision="959a211fbba059689a1c3a1b24fe0abb9224281a" upstream="wrynose" dest-branch="wrynose"/>
   <project name="meta-yocto" path="sources/meta-yocto" remote="yocto" revision="8251bdad5fda780a000fb41e6eda82eadf0fa39e" upstream="wrynose" dest-branch="wrynose"/>
-  <project name="openembedded-core" path="sources/openembedded-core" remote="oe" revision="06dd66e6220e5ce4ed4b9af4d8231ae5f0a8ce80" upstream="wrynose" dest-branch="wrynose"/>
+  <project name="openembedded-core" path="sources/openembedded-core" remote="oe" revision="e32cbc177daec09ae68fb3ebb72ffa965dceece4" upstream="wrynose" dest-branch="wrynose"/>
   <project name="sbabic/meta-swupdate" path="sources/meta-swupdate" remote="github" revision="4cfc4c98e6318c3fb1117141701de9c506bbce50" upstream="wrynose" dest-branch="wrynose"/>
   <project name="yocto-bsp" path="." remote="seapath" revision="afbb5fc14d9618202e673c3cf708b6bff9bf5ca3" upstream="wrynose" dest-branch="wrynose"/>
   
